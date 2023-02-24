@@ -33,3 +33,4 @@ Without guidance from these website, my project would not exist.
 * [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
 * [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
 
+* [Write a file with Node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/)
