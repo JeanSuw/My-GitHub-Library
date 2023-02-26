@@ -10,8 +10,6 @@ const questions = [
     "test instructions"
 ];
 
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, ( err) => 
@@ -28,13 +26,13 @@ function init() {
         // Use user feedback for... whatever!!
         answers = process.argv;
         console.log(process.argv);
-        
+
     })
     .catch((error) => {
         if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
+            console.log("Prompt couldn't be rendered in the current environment");
         } else {
-            // Something else went wrong
+            console.log("How did you get here?");
         }
     });
 }
