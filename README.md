@@ -34,3 +34,4 @@ Without guidance from these website, my project would not exist.
 * [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
 
 * [Write a file with Node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/)
+* [Inquirer.js Documentation](https://www.npmjs.com/package/inquirer/v/8.2.4)
