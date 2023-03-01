@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description As a developer, you have devoted your time on your project to the point that you have little time to write a README file. This Professional README Generator will help you save time by using a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "8.2.4"
-  }
+    "inquirer": "^8.2.4"
+  },
+  "keywords": []
 }
