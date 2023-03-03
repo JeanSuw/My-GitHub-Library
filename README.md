@@ -4,13 +4,15 @@
 As a developer, you have devoted your time on your project to the point that you have little time to write a README file. This Professional README Generator will help you save time by using a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 A professional README.md file includes:
+* Title of your project
 * Description
-* Useage
+* Table of Content
 * Installation
-* Issues 
-* How to contribute
-
-
+* Useage
+* License
+* Contribution
+* Test
+* Questions (Ways to reach out to you)
 
 ## Useage
 The application will be invoked by using the following command:

@@ -49,10 +49,6 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    //const readmeFormat = `# ${data.title} `;
-
-
-    // JSON.stringify(data)
     fs.writeFile(fileName, data, (err) => 
         err ? console.error(err) : console.log('Commit logged!')
     );
@@ -60,7 +56,6 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    
     inquirer
         .prompt(questions)
     .then((data) => {
