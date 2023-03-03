@@ -36,7 +36,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, ( err) => 
+    const readmeFormat = ``;
+    // JSON.stringify(data)
+    fs.writeFile(fileName, JSON.stringify(data), (err) => 
         err ? console.error(err) : console.log('Commit logged!')
     );
 }
@@ -46,11 +48,8 @@ function init() {
     var inquirer = require('inquirer');
     inquirer
         .prompt(questions)
-    .then((answers) => {
-        // Use user feedback for... whatever!!
-        //answers = process.argv;
-        //console.log(process.argv);
-
+    .then((data) => {
+        writeToFile("Something.md", data);
     })
     .catch((error) => {
         if (error.isTtyError) {
@@ -61,20 +60,5 @@ function init() {
     });
 }
 
-// //function testArgv(){
-//     // const userInputs = process.argv;
-//     // console.log(`Check inside userInputs: ${userInputs[0]} \n ${userInputs[1]} \n ${userInputs[2]} \n ${userInputs[3]}`);
-
-//     // var userResponses = [];
-//     // for (let i = 2; i > userInputs.length; i++){
-//     //     userResponses.push(userInputs[i]);
-//     // }
-
-//     // console.log(`Check inside userResponses: ${userResponses}`);
-
-
-// //}
-
 // Function call to initialize app
 init();
-console.log("Hello");
