@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./assets/utils/generateMarkdown.js');
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -9,7 +12,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is the description of your project?',
+        message: 'What is the description of your project? (What is it? Why do you make it? How did you make it)',
         name: 'description',
     },
     {
@@ -24,34 +27,45 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'contribution guidelines?',
+        message: 'Contribution Guidelines?',
         name: 'contribution',
     },
     {
         type: 'input',
-        message: 'test instructions?',
+        message: 'Test Instructions?',
         name: 'test',
+    },
+    {
+        type: 'input',
+        message: 'Insert github account: ',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'Insert your email address: ',
+        name: 'email',
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const readmeFormat = `# ${data.title} `;
+    //const readmeFormat = `# ${data.title} `;
 
 
     // JSON.stringify(data)
-    fs.writeFile(fileName, readmeFormat, (err) => 
+    fs.writeFile(fileName, data, (err) => 
         err ? console.error(err) : console.log('Commit logged!')
     );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    var inquirer = require('inquirer');
+    
     inquirer
         .prompt(questions)
     .then((data) => {
-        writeToFile("Something.md", data);
+        var newPage = generateMarkdown(data);
+        writeToFile("Something.md", newPage);
     })
     .catch((error) => {
         if (error.isTtyError) {

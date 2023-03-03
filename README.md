@@ -31,6 +31,8 @@ Without guidance from these website, my project would not exist.
 
 * [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4)
 * [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) 
+* [Github doc: Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Markdown table contents](https://linuxhint.com/markdown-table-contents/)
 * [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
 
 * [Write a file with Node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/)
