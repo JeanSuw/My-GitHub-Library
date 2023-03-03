@@ -36,14 +36,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const readmeFormat = ``;
+    const readmeFormat = `# ${data.title} `;
+
+
     // JSON.stringify(data)
-    fs.writeFile(fileName, JSON.stringify(data), (err) => 
+    fs.writeFile(fileName, readmeFormat, (err) => 
         err ? console.error(err) : console.log('Commit logged!')
     );
 }
 
-// // TODO: Create a function to initialize app
+// TODO: Create a function to initialize app
 function init() {
     var inquirer = require('inquirer');
     inquirer
