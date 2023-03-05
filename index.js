@@ -36,6 +36,12 @@ const questions = [
         name: 'test',
     },
     {
+        type: 'list',
+        message: 'Select a license you will use for this project',
+        name: 'license',
+        choices: ['Apache', 'MIT', 'BSD', 'No license'], // Most common used license
+    },
+    {
         type: 'input',
         message: 'Insert github account: ',
         name: 'github',
