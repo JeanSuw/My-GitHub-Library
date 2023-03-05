@@ -37,6 +37,8 @@ Without guidance from these website, my project would not exist.
 * [Markdown table contents](https://linuxhint.com/markdown-table-contents/)
 * [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide)
 * [Most Common Open Source Licenses](https://snyk.io/learn/open-source-licenses/)
+* [Adding License to readme file](https://www.davidketcheson.info/2015/05/13/add_a_readme.html)
+* [Choose a license](https://choosealicense.com/)
 * [Write a file with Node.js](https://nodejs.dev/en/learn/writing-files-with-nodejs/)
 * [Inquirer.js Documentation](https://www.npmjs.com/package/inquirer/v/8.2.4)
 * [Node js Prompts](https://cto.ai/docs/nodejs-prompts)

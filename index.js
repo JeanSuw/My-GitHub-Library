@@ -39,7 +39,8 @@ const questions = [
         type: 'list',
         message: 'Select a license you will use for this project',
         name: 'license',
-        choices: ['Apache', 'MIT', 'BSD', 'No license'], // Most common used license
+        choices: ['agpl-3.0','gpl-3.0' ,'lgpl-3.0','apache-2.0', 'mit', 'mpl-2.0','No license'], 
+        // Most common used license
     },
     {
         type: 'input',
