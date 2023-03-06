@@ -67,7 +67,7 @@ function init() {
         .prompt(questions)
     .then((data) => {
         var newPage = generateMarkdown(data);
-        writeToFile("Something.md", newPage);
+        writeToFile("./yourReadmeFolder/yourREADME.md", newPage);
     })
     .catch((error) => {
         if (error.isTtyError) {
