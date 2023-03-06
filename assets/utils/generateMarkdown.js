@@ -2,8 +2,16 @@
 function renderLicenseBadge(license) {
   if (license === 'No license'){
     return ' '; // If there is no license, return an empty string
+  }else if (license.includes("-")){
+    var newStr = license;
+    newStr = newStr.replace("-", "--");
+    return `
+![licenseBadge](https://img.shields.io/badge/license-${newStr}-blue)
+    `;
   }else{
-    return ``;
+    return `
+![licenseBadge](https://img.shields.io/badge/license-${license}-green)
+    `;
   }
 }
 
@@ -12,7 +20,9 @@ function renderLicenseLink(license) {
   if (license === 'No license'){
     return ''; // If there is no license, return an empty string
   }else{
-    return `![${license}](https://choosealicense.com/licenses/${license}/#)`;
+return `
+![${license}](https://choosealicense.com/licenses/${license})
+`;
   }
 }
 
@@ -29,36 +39,72 @@ function renderLicenseSection(license) {
 
 // A function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  if (data.license !== 'No license'){
+    return `# ${data.title}
+${renderLicenseBadge(data.license)}
+## Description
+${data.description}
 
-  ## Description
-  ${data.description}
+## Table of content
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Test](#test)
+* [License](#license)
+* [Questions](#questions)
+      
+## Installation
+${data.installation}
+      
+## Usage
+${data.usage}
+      
+## Contribution
+${data.contribution}
 
-  ## Table of content
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contribution](#contribution)
-  * [Test](#test)
-  * [Questions](#questions)
+## Test
+${data.test}
+      
+${renderLicenseSection(data.license)}
+
+## Questions
+If you have any questions, please contact me by using the following links:
+* GitHub: [${data.github}](${data.github})
+* Email: [${data.email}](${data.email})
+`;
+  }else{
+    return `# ${data.title}
+## Description
+${data.description}
+
+## Table of content
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Test](#test)
+* [Questions](#questions)
+      
+## Installation
+${data.installation}
+      
+## Usage
+${data.usage}
+      
+## Contribution
+${data.contribution}
+
+## Test
+${data.test}
+
+## Questions
+If you have any questions, please contact me by using the following links:
+* GitHub: [${data.github}](${data.github})
+* Email: [${data.email}](${data.email})
+`;
+  }
   
-  ## Installation
-  ${data.installation}
-  
-  ## Usage
-  ${data.usage}
-  
-  ## Contribution
-  ${data.contribution}
-
-  ## Test
-  ${data.test}
-
-  ## Questions
-  If you have any questions, please contact me by using the following links:
-  * GitHub: [${data.github}](${data.github})
-  * Email: [${data.email}](${data.email})
-  `;
 }
 
 module.exports = generateMarkdown;
