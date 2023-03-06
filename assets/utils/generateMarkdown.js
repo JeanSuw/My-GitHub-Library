@@ -20,7 +20,6 @@ function renderLicenseLink(license) {
   if (license === 'No license'){
     return ''; // If there is no license, return an empty string
   }else{
-    //'agpl-3.0','gpl-3.0' ,'lgpl-3.0','apache-2.0', 'mit', 'mpl-2.0'
     var longText = 'This is project is licened under the';
     switch (license){
       case 'agpl-3.0':
