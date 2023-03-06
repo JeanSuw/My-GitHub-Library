@@ -1,6 +1,6 @@
 # derp
 
-![licenseBadge](https://img.shields.io/badge/license-mit-blue)
+![licenseBadge](https://img.shields.io/badge/license-agpl--3.0-blue)
     
 ## Description
 dero
@@ -18,21 +18,19 @@ dero
 dero
       
 ## Usage
-derod
+dero
       
 ## Contribution
-dwaog
+dero
 
 ## Test
-sofgnw
+dero
       
 ## License
-    
-![mit](https://choosealicense.com/licenses/mit)
 
-    
+  This is project is licened under the GNU Affero General Public License v3.0
 
 ## Questions
 If you have any questions, please contact me by using the following links:
-* GitHub: [derp](derp)
+* GitHub: [dero](dero)
 * Email: [dero](dero)

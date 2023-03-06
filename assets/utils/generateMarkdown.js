@@ -20,9 +20,28 @@ function renderLicenseLink(license) {
   if (license === 'No license'){
     return ''; // If there is no license, return an empty string
   }else{
-return `
-![${license}](https://choosealicense.com/licenses/${license})
-`;
+    //'agpl-3.0','gpl-3.0' ,'lgpl-3.0','apache-2.0', 'mit', 'mpl-2.0'
+    var longText = 'This is project is licened under the';
+    switch (license){
+      case 'agpl-3.0':
+        return `
+  ${longText} GNU Affero General Public License v3.0`;
+      case 'gpl-3.0':
+        return `
+  ${longText} GNU General Public License v3.0`;
+      case 'lgpl-3.0':
+        return `
+  ${longText} GNU Lesser General Public License v3.0`;
+      case 'apache-2.0':
+        return `
+  ${longText} Apache License 2.0`;
+      case 'mit':
+        return `
+  ${longText} MIT License`;
+      case 'mpl-2.0':
+        return `
+  ${longText} Mozilla Public License 2.0`;
+    }
   }
 }
 
@@ -32,8 +51,7 @@ function renderLicenseSection(license) {
     return ' '; // If there is no license, return an empty string
   }else{
     return `## License
-    ${renderLicenseLink(license)}
-    `;
+${renderLicenseLink(license)}`;
   }
 }
 
