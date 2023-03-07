@@ -34,7 +34,7 @@ Once you have answer all of the questions. Check yourReadmeFolder for yourREADME
 ## [Installation](#table-of-content)
 This repo is build off of starter code [potential-enigma](https://github.com/coding-boot-camp/potential-enigma). Furthermore, this application won’t be deployed, so walkthrough video is provide in the link below.
 
-* [Demo (Downloaded version)](./image/DemoGenerateReadmeFile.webm)
+* [Demo (Downloaded version)](./image/DemoGenerateReadmeFile.webm) Please use this link to download if the quick link to demo does not work
 * [Quick link to demo](https://drive.google.com/file/d/144iSysHX2kvuDmazqDxnvw4ToNCBgYMV/view)
 
 ## [Credits](#table-of-content)
