@@ -21,18 +21,8 @@ node index.js
 ```
 Next it will start with asking your project name. You just have to type in and press enter to move on to the next question. This also applies to most of the questions
 
-```bash
-? What is your project title? Caturday
-? What is the description of your project? (What is it? Why do you make it? How did you make it?) It's a website for cat-lovers make plans to go to cat related place like cat cafe.
-? What is the installation instruction for your project? No need to install anything. Just click the link below. [Insert the link below]
-? Usage information? You can press the date you want to go and select a place you want to go to see cats.
-? Contribution Guidelines? No contribution
-? Test Instructions? No testing
-? Select a license you will use for this project mpl-2.0
-? Insert github account:  nyanCat@github.com
-? Insert your email address:  nyanCat@outlook.com
-Commit logged!
-```
+![screenshotOfTerminal](./image/TerminalExample.png)
+
 ## Installation
 This repo is build off of starter code [potential-enigma](https://github.com/coding-boot-camp/potential-enigma). Furthermore, this application won’t be deployed, so walkthrough video is provide in the link below.
 
