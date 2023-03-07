@@ -49,7 +49,7 @@ function renderLicenseSection(license) {
   if (license === 'No license'){
     return ' '; // If there is no license, return an empty string
   }else{
-    return `## License
+    return `## [License](#table-of-content)
 ${renderLicenseLink(license)}`;
   }
 }
@@ -62,7 +62,7 @@ ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 
-## Table of content
+## Table-of-content
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -71,31 +71,31 @@ ${data.description}
 * [License](#license)
 * [Questions](#questions)
       
-## Installation
+## [Installation](#table-of-content)
 ${data.installation}
       
-## Usage
+## [Usage](#table-of-content)
 ${data.usage}
       
-## Contribution
+## [Contribution](#table-of-content)
 ${data.contribution}
 
-## Test
+## [Test](#table-of-content)
 ${data.test}
       
 ${renderLicenseSection(data.license)}
 
-## Questions
+## [Questions](#table-of-content)
 If you have any questions, please contact me by using the following links:
 * GitHub: [${data.github}](${data.github})
 * Email: [${data.email}](${data.email})
 `;
   }else{
     return `# ${data.title}
-## Description
+## [Description](#table-of-content)
 ${data.description}
 
-## Table of content
+## Table-of-content
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -103,19 +103,19 @@ ${data.description}
 * [Test](#test)
 * [Questions](#questions)
       
-## Installation
+## [Installation](#table-of-content)
 ${data.installation}
       
-## Usage
+## [Usage](#table-of-content)
 ${data.usage}
       
-## Contribution
+## [Contribution](#table-of-content)
 ${data.contribution}
 
-## Test
+## [Test](#table-of-content)
 ${data.test}
 
-## Questions
+## [Questions](#table-of-content)
 If you have any questions, please contact me by using the following links:
 * GitHub: [${data.github}](${data.github})
 * Email: [${data.email}](${data.email})

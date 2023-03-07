@@ -1,6 +1,6 @@
 # My Github Library: ReadMe Shortcuts
 
-## Description
+## [Description](#table-of-content)
 As a developer, you have devoted your time on your project to the point that you have little time to write a README file. This Professional README Generator will help you save time by using a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 A professional README.md file includes:
@@ -14,7 +14,13 @@ A professional README.md file includes:
 * Test
 * Questions (Ways to reach out to you)
 
-## Useage
+## Table-of-Content
+* [Description](#description)
+* [Usage](#usage)
+* [Installation](#installation)
+* [Credits](#credits)
+
+## [Usage](#table-of-content)
 The application will be invoked by using the following command:
 ```bash
 node index.js
@@ -25,13 +31,13 @@ Next it will start with asking your project name. You just have to type in and p
 
 Once you have answer all of the questions. Check yourReadmeFolder for yourREADME.md file that you created.
 
-## Installation
+## [Installation](#table-of-content)
 This repo is build off of starter code [potential-enigma](https://github.com/coding-boot-camp/potential-enigma). Furthermore, this application won’t be deployed, so walkthrough video is provide in the link below.
 
 * [Demo (Downloaded version)](./image/HowToGenerateReadmefile.webm)
 * [Quick link to demo](https://drive.google.com/file/d/1TLcELSSIRNMBAUoX9rRcxszfHffoJjsd/view)
 
-## Credits
+## [Credits](#table-of-content)
 Without guidance from these website, my project would not exist.
 
 * [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4)
