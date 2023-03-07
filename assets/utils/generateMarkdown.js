@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   if (data.license !== 'No license'){
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
-## Description
+## [Description](#table-of-content)
 ${data.description}
 
 ## Table-of-content
