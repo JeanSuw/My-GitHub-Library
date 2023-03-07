@@ -23,6 +23,8 @@ Next it will start with asking your project name. You just have to type in and p
 
 ![screenshotOfTerminal](./image/TerminalExample.png)
 
+Once you have answer all of the questions. Check yourReadmeFolder for yourREADME.md file that you created.
+
 ## Installation
 This repo is build off of starter code [potential-enigma](https://github.com/coding-boot-camp/potential-enigma). Furthermore, this application won’t be deployed, so walkthrough video is provide in the link below.
 
