@@ -19,7 +19,7 @@ The application will be invoked by using the following command:
 ```bash
 node index.js
 ```
-Next it will start with asking your project name. You just have to type in and press enter to move on to the next question. This also applies to most of the questions
+Next it will start with asking your project name. You just have to type in and press enter to move on to the next question. This also applies to most of the questions.
 
 ![screenshotOfTerminal](./image/TerminalExample.png)
 
